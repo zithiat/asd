@@ -6,7 +6,6 @@ Final Examination: October 5 2019
 
 Important Addresses:
 
-
 Instructor:  Rene de Jong rene@ictintelligence.nl
 DE Coordinator:  csde@mum.edu
 DE Director:  csdedirector@mum.edu
@@ -20,23 +19,9 @@ ISBN:   0-201-63361-2, 0-201-63498-8 (CD)
 Format:  Hardcopy, paperback, and CD-ROM.
 Addison-Wesley Pub Co.
 
- 
-
- 
-
 Evaluation criteria
-Midterm Exam
-
-50%
-
-Final Exam
-
-50%
-
-
- 
-
- 
+Midterm Exam  50%
+Final Exam  50%
 
 Grade distribution:
 
@@ -50,196 +35,30 @@ C+	74-70
 C	69-65
 C-	64-60
  
-Weekly Schedule:
+Lesson 1
+https://drive.google.com/open?id=1nk2lPa8Zv8fs4x9TAx4vDY4z68m_0JUv
 
- 
+Lesson 2
+https://drive.google.com/open?id=19S9-MCLczoFmqCk2hSPDhjD-g0xyI6mt
 
-Weekly Schedule:
+Lesson 3
+https://drive.google.com/open?id=1h6Q4yK7A5uR2OUQWtLbzTHnMImS2T9XU
 
-Week 1: June 24
 
+Lesson 8
+https://drive.google.com/open?id=1TtfODxHL2FNdF52NqfGlFCgpM_DRi3NO
 
-Topic: Introduction and OO
-Watch Lesson 1 and Lesson 2
-Reading: GOF chapter 1
+Lesson 9
+https://drive.google.com/open?id=1labXBUJ1_CHaXueE20jbj9oKld82hsJX
 
-Lab: OO lab
+Lesson 10
+https://drive.google.com/open?id=1_dvPBM57NB21N_wBt3eA3RyC4_n5AJu7
 
+Lesson 11
+https://drive.google.com/open?id=1FIVpzj00ew6X3US3KVPo9AxiIuWb9EAB
 
+Lesson 12
+https://drive.google.com/open?id=1YITjJO5BDF6jAojqIbD5gQnBpyptHF9C
 
-Week 2: July 1
-
-Topic: Observer pattern
-Watch Lesson 3
-Reading: GOF Observer pattern, the article Explanation of the service class.pdf (found in the Resources/lab resources section)
-
-Homework: Observer pattern homework
-Lab: Observer pattern lab
-
-
-Week 3: July 8
-Topic: Façade, Strategy, Template method
-Watch Lesson 4 + Lesson 5
-Reading: GOF Façade, Strategy, Template method
-Homework: Strategy pattern homework
-Lab: Strategy pattern lab
-
-Week 4: July 15
-
-Topic: Iterator & Composite pattern
-Watch Lesson 6 + 7
-
-Reading: GOF Iterator and Composite pattern
-Homework: Composite pattern homework
-Lab: Composite pattern lab
-
-
-
-Week 5: July 22
-Topic: Command
-Watch Lesson 8
-Reading: GOF Command
-Homework: Command pattern homework
-Lab: Command pattern lab
-
-Week 6: July 29
-Topic: State
-Watch Lesson 9 
-Reading: GOF State
-Homework: State pattern homework
-Lab: State pattern lab
-
-Week 7: August 5
-Topic: Chain Of Responsibility pattern
-Watch Lesson 10
-Reading: GOF Chain Of Responsibility
-Lab: Chain of Resposibility pattern lab lab
-
-
-
-Week 8: August 12
-
-Review and study for the midterm
-
-Midterm Exam: August 17
-
-Week 9: August 19
-
-Topics: Proxy pattern, adapter pattern, mediator pattern
-
-Download presentation from https://drive.google.com/open?id=1TtfODxHL2FNdF52NqfGlFCgpM_DRi3NO
-
-To watch the presentations, follow the instructions in the readme.txt file
-The presentation slides can be found in the sakai folder resources/lesson slides
-
-The Java examples from the presentations can be found in the sakai folder resources/Code examples
-
-Lab: Lab8
-
-
-Week 10: August 26
-Topics: Factory pattern, builder pattern, decorator pattern, singleton pattern
-
-Download presentation from https://drive.google.com/open?id=1labXBUJ1_CHaXueE20jbj9oKld82hsJX
-
-To watch the presentations, follow the instructions in the readme.txt file
-The presentation slides can be found in the sakai folder resources/lesson slides
-
-The Java examples from the presentations can be found in the sakai folder resources/Code examples
-
-Lab: Lab9
-
-
-Week 11: September 2
-Topic: Framework design
-
-Download presentation from https://drive.google.com/open?id=1_dvPBM57NB21N_wBt3eA3RyC4_n5AJu7
-
-To watch the presentations, follow the instructions in the readme.txt file
-The presentation slides can be found in the sakai folder resources/lesson slides
-
-Lab: Lab10
-
-
-Week 12: September 9
-
-Topic: Framework implementation
-
-Download presentation from https://drive.google.com/open?id=1FIVpzj00ew6X3US3KVPo9AxiIuWb9EAB
-
-The presentation slides can be found in the sakai folder resources/lesson slides
-
-Lab: Lab11
-
- 
-
-Week 13: September 16
-
-Topic: Framework example: Spring framework and DI
-
-Download presentation from https://drive.google.com/open?id=1YITjJO5BDF6jAojqIbD5gQnBpyptHF9C
-
-To watch the presentations, follow the instructions in the readme.txt file
-The presentation slides can be found in the sakai folder resources/lesson slides
-
-The Java examples from the presentations can be found in the sakai folder resources/Code examples
-
-Lab: Lab 12
-
-
-Week 14: September 23
-
-Topic: Framework example: Spring framework AOP and events
-
-Download presentation from https://drive.google.com/open?id=1Vu3u0x7KDNLae5ntETLMggQzgpkraVRB
-
-
-The presentation slides can be found in the sakai folder resources/lesson slides
-
-The Java examples from the presentations can be found in the sakai folder resources/Code examples
-
-Lab: Lab 13
-
-Week 15: September 30
-Review and study for the final
-
-
-Final Exam October 5
-
- 
-
-Course Structure
-
-I will presume that you are all familiar with the general structure and process of DE courses, but I do want to make a few additional comments here on this course:
-
-You are expected to spend about 8-10 hours/week on the course, including the video lectures and all assignments. Be sure to manage your time, and plan for adequate time each week.
-You need to be sure that you have this attention to time management, so that you are not caught in a bind and have to stay up late to complete any parts of the course. Just as we remind you while on campus, a good schedule and proper rest are vital for maintaining good health, and keeping regular with your TM practice twice-daily is a required part of the course (and all DE courses), and vital for continued happiness and growth in life.
-All students are expected to participate in the class discussions, just like on-campus. That means that you interact with the other students in newsgroup discussions, either by posting or answering questions. Note that any personal issues should be emailed directly to me, not posted to the public forum.
-Exams will be on the regular DE office schedule, and no late or rescheduled exams will be allowed without prior approval from me, and this will only be in the case of some personal or medical emergency. We do not allow alternate exam dates for convenience.
- 
-
-Academic Honesty
-
-Please, read the following information and abide by these rules. Any dishonesty in your homework, lab assignments and exams will result in failing the course and being put on academic probation and potential dismissal from the program.
-
-Academic Honesty Policy
-
-Because of the importance of maintaining a high level of ethical and professional behavior in our program, we have a "no tolerance" policy on academic dishonesty. This means we will not evaluate situations based on the degree or seriousness of a cheating incident. No cheating will be allowed. All cheating incidents will be taken as a serious event, and the standard result of an NC in the course, academic probation, and review for dismissal will follow.
-
-Description and Rationale:
-
-Any collaboration on a supervised or proctored activity (exam, quiz, exercise, ...) which is intended as individual work will be considered as a violation of the Academic Honesty Policy.
-
-Any submission of work by others as your work for an assignment which is for individual evaluation, or giving your work to others, is also a violation. That means that in a case of copying, both the copier and copied from person are both involved, which means that you have the responsibility to protect your work, and guarantee that it is not copied by others.
-
-If you feel that you have some case where you can include the work of others in a submission, then you should confirm this with the course faculty, and include an explicit note with the material indicating what was copied, and from where. This includes cases where the main substance is copied, and only some superficial or small changes are made to the material.
-
-Homeworks and Labs
-
-The purpose of all homeworks and labs is for you to practice the knowledge which you gain in lectures and readings. Without such hands-on practice, you will not be able to effectively learn the details of issues involved in concrete application of the knowledge.
-
-You are expected to do all programming and homework assignments on your own. You may not copy files or solutions from other students or have friends do all or part of assignments for you.
-
-You may discuss concepts and ideas with other students. You may answer general questions about programming languages rules or help someone interpret an error message or locate a bug. You can also review together the relevant topics from class or readings to help understand the principles required for a program. In general, if the instructor or TA would provide a particular form of assistance, you may provide it too. When in doubt, check with the instructor or TA.
-
-If you copy labs, or allow someone to copy your labs, this is cheating. This would prevent you from one of the valuable learning experiences in the course. In addition, it is a violation of MUM academic policy. Punishment for academic misconduct can be severe, including failing the course, or even being expelled from school. By departmental rules all cases of cheating must be reported to the Dean's office.
+Lesson 13
+https://drive.google.com/open?id=1Vu3u0x7KDNLae5ntETLMggQzgpkraVRB
