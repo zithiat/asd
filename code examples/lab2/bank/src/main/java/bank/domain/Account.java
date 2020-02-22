@@ -6,6 +6,7 @@ public class Account {
 	long accountnumber;
 	Collection<AccountEntry> entryList = new ArrayList<AccountEntry>();
 	Customer customer;
+	AccountTypes type;
 
 	public Account(long accountnr) {
 		this.accountnumber = accountnr;
@@ -61,6 +62,14 @@ public class Account {
 
 	public Collection<AccountEntry> getEntryList() {
 		return entryList;
+	}
+
+	public AccountTypes getType() {
+		return type;
+	}
+
+	public void setType(AccountTypes type) {
+		this.type = type;
 	}
 
 }

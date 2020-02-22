@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import bank.domain.Account;
 import bank.domain.AccountEntry;
+import bank.domain.AccountTypes;
 import bank.domain.Customer;
 import bank.service.AccountService;
 import bank.service.IAccountService;
@@ -11,18 +12,26 @@ import bank.service.IAccountService;
 public class Application {
 	public static void main(String[] args) {
 		IAccountService accountService = new AccountService();
+		 
 		// create 2 accounts;
-		accountService.createAccount(1263862, "Frank Brown");
-		accountService.createAccount(4253892, "John Doe");
+		Account frank = accountService.createAccount(1263862, "Frank Brown");
+		Account joe = accountService.createAccount(4253892, "John Doe");
 		// use account 1;
-		accountService.deposit(1263862, 240);
-		accountService.deposit(1263862, 529);
-		accountService.withdraw(1263862, 230);
-		// use account 2;
-		accountService.deposit(4253892, 12450);
-		accountService.transferFunds(4253892, 1263862, 100, "payment of invoice 10232");
+//		accountService.deposit(1263862, 240);
+//		accountService.deposit(1263862, 529);
+//		accountService.withdraw(1263862, 230);
+//		// use account 2;
+//		accountService.deposit(4253892, 12450);
+//		accountService.transferFunds(4253892, 1263862, 100, "payment of invoice 10232");
+		
+		accountService.deposit(frank, 240);
+		accountService.deposit(frank, 529);
+		accountService.withdraw(frank, 230);
+		
+		accountService.deposit(joe, 12450);
+		accountService.transferFunds(joe, frank, 100, "payment of invoice 10232");
+		
 		// show balances
-
 		Collection<Account> accountlist = accountService.getAllAccounts();
 		Customer customer = null;
 		for (Account account : accountlist) {
@@ -38,6 +47,11 @@ public class Application {
 			System.out.println("----------------------------------------" + "----------------------------------------");
 			System.out.printf("%30s%30s%20.2f\n\n", "", "Current Balance:", account.getBalance());
 		}
+		
+		accountService.addAccountType(frank, AccountTypes.SAVINGS);
+		accountService.addAccountType(joe, AccountTypes.CHECKINGS);
+		accountService.addInterest(frank);
+		accountService.addInterest(joe);
 	}
 
 }
