@@ -1,10 +1,15 @@
 package bank.notifier;
 
-public class EmailSender implements Notifier {
+public class EmailSender extends Notifier {
+	
+	public EmailSender(NotifyingData nd) {
+		this.data = nd;
+		this.data.attach(this);
+	}
 
 	@Override
-	public void update(String msg) {
-		System.out.println("EmailSender: " + msg);
+	public void update() {
+		System.out.println("EmailSender:\t" + data.msg);
 	}
 
 }

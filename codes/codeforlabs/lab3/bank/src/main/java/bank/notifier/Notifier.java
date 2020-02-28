@@ -1,5 +1,6 @@
 package bank.notifier;
 
-public interface Notifier {
-	void update(String msg); 
+abstract class Notifier {
+	NotifyingData data;
+	abstract void update(); 
 }

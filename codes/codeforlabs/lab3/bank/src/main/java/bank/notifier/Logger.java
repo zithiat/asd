@@ -1,9 +1,14 @@
 package bank.notifier;
 
-public class Logger implements Notifier{
+public class Logger extends Notifier{
+	
+	public Logger(NotifyingData nd) {
+		this.data = nd;
+		this.data.attach(this);
+	}
 
 	@Override
-	public void update(String msg) {
-		System.out.println("Logger: " + msg);
+	public void update() {
+		System.out.println("Logger:\t\t" + data.msg);
 	}
 }

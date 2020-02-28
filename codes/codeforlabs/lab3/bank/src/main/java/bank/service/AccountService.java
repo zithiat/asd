@@ -6,21 +6,26 @@ import bank.dao.AccountDAO;
 import bank.dao.IAccountDAO;
 import bank.domain.Account;
 import bank.domain.Customer;
+import bank.notifier.EmailData;
 import bank.notifier.EmailSender;
 import bank.notifier.Logger;
-import bank.notifier.Notifier;
+import bank.notifier.LoggerData;
+import bank.notifier.NotifyingData;
+import bank.notifier.SMSData;
 import bank.notifier.SMSSender;
 
 public class AccountService implements IAccountService {
 	private IAccountDAO accountDAO;
-	private List<Notifier> observerList;
+	private NotifyingData emailData = new EmailData();
+	private NotifyingData smsData = new SMSData();
+	private NotifyingData loggerData = new LoggerData();
 
 	public AccountService() {
 		accountDAO = new AccountDAO();
-		observerList = new ArrayList<Notifier>();
-		observerList.add(new Logger());
-		observerList.add(new SMSSender());
-		observerList.add(new EmailSender());
+		// initiate the observers
+		new Logger(loggerData);
+		new EmailSender(emailData);
+		new SMSSender(smsData);
 	}
 
 	public Account createAccount(long accountNumber, String customerName) {
@@ -28,7 +33,10 @@ public class AccountService implements IAccountService {
 		Customer customer = new Customer(customerName);
 		account.setCustomer(customer);
 		accountDAO.saveAccount(account);
-		observerList.stream().forEach(e -> e.update("Create account "+ accountNumber + " for " + customerName));
+		
+		emailData.setMsg("New account created: " + accountNumber + " for " + customerName);
+		emailData.notifyObservers();
+		
 		return account;
 	}
 
@@ -36,7 +44,8 @@ public class AccountService implements IAccountService {
 		Account account = accountDAO.loadAccount(accountNumber);
 		account.deposit(amount);
 		accountDAO.updateAccount(account);
-		observerList.stream().forEach(e -> e.update("Deposit " + amount + " to account "+ accountNumber));
+		
+		notifyAccountChanges("Deposit " + amount + " to account " + accountNumber);
 	}
 
 	public Account getAccount(long accountNumber) {
@@ -52,7 +61,8 @@ public class AccountService implements IAccountService {
 		Account account = accountDAO.loadAccount(accountNumber);
 		account.withdraw(amount);
 		accountDAO.updateAccount(account);
-		observerList.stream().forEach(e -> e.update("Withdraw " + amount + " from account "+ accountNumber));
+		
+		notifyAccountChanges("Withdraw " + amount + " from account " + accountNumber);
 	}
 
 	public void transferFunds(long fromAccountNumber, long toAccountNumber, double amount, String description) {
@@ -61,6 +71,14 @@ public class AccountService implements IAccountService {
 		fromAccount.transferFunds(toAccount, amount, description);
 		accountDAO.updateAccount(fromAccount);
 		accountDAO.updateAccount(toAccount);
-		observerList.stream().forEach(e -> e.update("Transfer " + amount + " from account "+ fromAccountNumber + " to account " + toAccountNumber));
+		
+		notifyAccountChanges("Transfer funds " + amount + " from account " + fromAccountNumber + " to account " + toAccountNumber);
+	}
+	
+	private void notifyAccountChanges(String msg) {
+		loggerData.setMsg(msg);
+		smsData.setMsg(msg);
+		loggerData.notifyObservers();
+		smsData.notifyObservers();
 	}
 }
