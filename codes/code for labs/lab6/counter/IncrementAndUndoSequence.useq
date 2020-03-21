@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.4" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="counter.JFrameCounter" project="counter" 
+    file="/counter/src/main/java/counter/JFrameCounter.java" binary="false" label="jFrameCounter" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="86" y="0"/>    
+    <execution id="2">      
+      <position height="485" width="111" x="5" y="78"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" name="counter.Counter" project="counter" 
+    file="/counter/src/main/java/counter/Counter.java" binary="false" label="counter" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="179" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="68" x="120" y="99"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="410" width="68" x="120" y="132"/>    
+    </execution>  
+  </object>  
+  <object id="32" language="java" name="counter.History" project="counter" 
+    file="/counter/src/main/java/counter/History.java" binary="false" label="history" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="194" y="0"/>    
+    <execution id="21">      
+      <position height="21" width="63" x="192" y="344"/>    
+    </execution>  
+  </object>  
+  <object id="33" language="java" name="counter.IncrementCounterCommand" project="counter" 
+    file="/counter/src/main/java/counter/IncrementCounterCommand.java" binary="false" label="incrementCounterCommand" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="290" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="184" x="259" y="281"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="184" x="259" y="311"/>    
+    </execution>  
+  </object>  
+  <object id="34" language="java" name="counter.DecrementCounterCommand" project="counter" 
+    file="/counter/src/main/java/counter/DecrementCounterCommand.java" binary="false" label="decrementCounterCommand" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="619" y="0"/>    
+    <execution id="29">      
+      <position height="21" width="189" x="447" y="472"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="21" width="189" x="447" y="500"/>    
+    </execution>  
+  </object>  
+  <object id="35" language="java" name="counter.SingleState" project="counter" 
+    file="/counter/src/main/java/counter/SingleState.java" binary="false" label="singleState" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="499" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="88" x="380" y="153"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="21" width="88" x="380" y="191"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="88" x="380" y="224"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="88" x="380" y="255"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="88" x="447" y="380"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="88" x="447" y="411"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="88" x="447" y="442"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="Counter()" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="increment():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="8" operation="SingleState(counter.Counter,int,boolean)" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="setPoints(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="setIncDecFlag(boolean):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="update():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="IncrementCounterCommand(counter.Counter)" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="execute():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="undo():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="setPoints(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="setIncDecFlag(boolean):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="update():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="DecrementCounterCommand(counter.Counter)" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="execute():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>
+</sequence-diagram>

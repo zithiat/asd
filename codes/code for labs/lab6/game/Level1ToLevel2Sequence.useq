@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.4" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="game.Application" project="game" file="/game/src/main/java/game/Application.java" 
+    binary="false" label="application" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="155" y="0"/>    
+    <execution id="2">      
+      <position height="406" width="86" x="5" y="99"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="game.Game" project="game" file="/game/src/main/java/game/Game.java" 
+    binary="false" label="game" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="203" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="56" x="95" y="120"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="21" width="56" x="95" y="159"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="56" x="95" y="195"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="256" width="56" x="95" y="228"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="21" width="7" x="120" y="344"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="7" x="123" y="399"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="game.LevelOneState" project="game" 
+    file="/game/src/main/java/game/LevelOneState.java" binary="false" label="levelOneState" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="196" y="0"/>    
+    <execution id="13">      
+      <position height="192" width="106" x="155" y="249"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="21" width="106" x="155" y="294"/>    
+    </execution>  
+  </object>  
+  <object id="25" language="java" name="game.LevelTwoState" project="game" 
+    file="/game/src/main/java/game/LevelTwoState.java" binary="false" label="levelTwoState" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="359" y="0"/>    
+    <execution id="22">      
+      <position height="21" width="106" x="265" y="329"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="106" x="265" y="442"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="Game()" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="changeLevelState(game.LevelState):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="addPoints(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="play():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="12" operation="play():void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="play():void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="19" operation="play():void" asynchronous="false">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="LevelTwoState(game.Game)" asynchronous="false">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="changeLevelState(game.LevelState):void" asynchronous="false">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="24" operation="addPoints(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>
+</sequence-diagram>
