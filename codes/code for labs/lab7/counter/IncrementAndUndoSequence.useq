@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.4" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="counter.JFrameCounter" project="counter" 
+    file="/counter/src/main/java/counter/JFrameCounter.java" binary="false" label="jFrameCounter" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="86" y="0"/>    
+    <execution id="2">      
+      <position height="834" width="111" x="5" y="78"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" name="counter.Counter" project="counter" 
+    file="/counter/src/main/java/counter/Counter.java" binary="false" label="counter" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="179" y="0"/>    
+    <execution id="4">      
+      <position height="63" width="68" x="120" y="99"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="702" width="68" x="120" y="189"/>    
+    </execution>  
+  </object>  
+  <object id="38" language="java" name="counter.History" project="counter" 
+    file="/counter/src/main/java/counter/History.java" binary="false" label="history" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="194" y="0"/>    
+    <execution id="25">      
+      <position height="21" width="63" x="192" y="534"/>    
+    </execution>  
+  </object>  
+  <object id="39" language="java" name="counter.IncrementCounterCommand" project="counter" 
+    file="/counter/src/main/java/counter/IncrementCounterCommand.java" binary="false" label="incrementCounterCommand" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="290" y="0"/>    
+    <execution id="19">      
+      <position height="21" width="184" x="259" y="338"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="184" x="259" y="368"/>    
+    </execution>  
+  </object>  
+  <object id="40" language="java" name="counter.DecrementCounterCommand" project="counter" 
+    file="/counter/src/main/java/counter/DecrementCounterCommand.java" binary="false" label="decrementCounterCommand" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="619" y="0"/>    
+    <execution id="33">      
+      <position height="21" width="189" x="447" y="665"/>    
+    </execution>    
+    <execution id="35">      
+      <position height="21" width="189" x="447" y="693"/>    
+    </execution>  
+  </object>  
+  <object id="41" language="java" name="counter.SingleState" project="counter" 
+    file="/counter/src/main/java/counter/SingleState.java" binary="false" label="singleState" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="499" y="0"/>    
+    <execution id="11">      
+      <position height="21" width="88" x="380" y="210"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="21" width="88" x="380" y="248"/>    
+    </execution>    
+    <execution id="15">      
+      <position height="21" width="88" x="380" y="281"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="88" x="380" y="312"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="88" x="447" y="573"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="21" width="88" x="447" y="604"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="21" width="88" x="447" y="635"/>    
+    </execution>  
+  </object>  
+  <object id="42" language="java" name="counter.RedDetect" project="counter" 
+    file="/counter/src/main/java/counter/RedDetect.java" binary="false" label="redDetect" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="807" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="82" x="732" y="120"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="225" width="82" x="732" y="400"/>    
+    </execution>    
+    <execution id="37">      
+      <position height="147" width="82" x="732" y="723"/>    
+    </execution>  
+  </object>  
+  <object id="49" language="java" name="counter.GreenDetect" project="counter" 
+    file="/counter/src/main/java/counter/GreenDetect.java" binary="false" label="greenDetect" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="870" y="0"/>    
+    <execution id="44">      
+      <position height="21" width="94" x="818" y="421"/>    
+    </execution>    
+    <execution id="46">      
+      <position height="154" width="94" x="818" y="450"/>    
+    </execution>    
+    <execution id="48">      
+      <position height="105" width="94" x="818" y="744"/>    
+    </execution>  
+  </object>  
+  <object id="56" language="java" name="counter.BlueDetect" project="counter" 
+    file="/counter/src/main/java/counter/BlueDetect.java" binary="false" label="blueDetect" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="951" y="0"/>    
+    <execution id="51">      
+      <position height="21" width="85" x="916" y="471"/>    
+    </execution>    
+    <execution id="53">      
+      <position height="89" width="85" x="916" y="494"/>    
+    </execution>    
+    <execution id="55">      
+      <position height="63" width="85" x="916" y="765"/>    
+    </execution>  
+  </object>  
+  <object id="63" language="java" name="counter.OrangeDetect" project="counter" 
+    file="/counter/src/main/java/counter/OrangeDetect.java" binary="false" label="orangeDetect" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="1060" y="0"/>    
+    <execution id="58">      
+      <position height="21" width="102" x="1005" y="515"/>    
+    </execution>    
+    <execution id="60">      
+      <position height="21" width="102" x="1005" y="541"/>    
+    </execution>    
+    <execution id="62">      
+      <position height="21" width="102" x="1005" y="786"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="Counter()" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="increment():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="8" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="SingleState(counter.Counter,int,boolean)" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="setPoints(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="setIncDecFlag(boolean):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="update():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="IncrementCounterCommand(counter.Counter)" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="execute():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="detect():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="undo():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="setPoints(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="setIncDecFlag(boolean):void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="update():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="32" operation="DecrementCounterCommand(counter.Counter)" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>  
+  <message id="34" operation="execute():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="36" operation="detect():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="37"/>  
+  </message>  
+  <message id="43" operation="GreenDetect(counter.Counter)" asynchronous="false">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="44"/>  
+  </message>  
+  <message id="45" operation="detect():void" asynchronous="false">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="46"/>  
+  </message>  
+  <message id="47" operation="detect():void" asynchronous="false">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="48"/>  
+  </message>  
+  <message id="50" operation="BlueDetect(counter.Counter)" asynchronous="false">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="51"/>  
+  </message>  
+  <message id="52" operation="detect():void" asynchronous="false">    
+    <end type="SOURCE" refId="46"/>    
+    <end type="TARGET" refId="53"/>  
+  </message>  
+  <message id="54" operation="detect():void" asynchronous="false">    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="55"/>  
+  </message>  
+  <message id="57" operation="OrangeDetect(counter.Counter)" asynchronous="false">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="58"/>  
+  </message>  
+  <message id="59" operation="detect():void" asynchronous="false">    
+    <end type="SOURCE" refId="53"/>    
+    <end type="TARGET" refId="60"/>  
+  </message>  
+  <message id="61" operation="detect():void" asynchronous="false">    
+    <end type="SOURCE" refId="55"/>    
+    <end type="TARGET" refId="62"/>  
+  </message>
+</sequence-diagram>
