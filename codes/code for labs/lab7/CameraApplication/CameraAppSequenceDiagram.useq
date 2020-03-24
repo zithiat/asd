@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.4" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="CameraApplication" project="CameraApplication" 
+    file="/CameraApplication/src/CameraApplication.java" binary="false" label="cameraApplication" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="88" y="0"/>    
+    <execution id="2">      
+      <position height="396" width="131" x="5" y="78"/>    
+    </execution>  
+  </object>  
+  <object id="7" language="java" name="CameraRecord" project="CameraApplication" 
+    file="/CameraApplication/src/CameraRecord.java" binary="false" label="cameraRecord" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="239" y="0"/>    
+    <execution id="4">      
+      <position height="21" width="109" x="140" y="99"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="322" width="109" x="140" y="131"/>    
+    </execution>  
+  </object>  
+  <object id="12" language="java" name="UnregisterDetect" project="CameraApplication" 
+    file="/CameraApplication/src/UnregisterDetect.java" binary="false" label="unregisterDetect" type="class" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="308" y="0"/>    
+    <execution id="9">      
+      <position height="21" width="120" x="253" y="152"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="246" width="120" x="253" y="186"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="UnpaidDetect" project="CameraApplication" 
+    file="/CameraApplication/src/UnpaidDetect.java" binary="false" label="unpaidDetect" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="450" y="0"/>    
+    <execution id="14">      
+      <position height="21" width="99" x="377" y="207"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="172" width="99" x="377" y="239"/>    
+    </execution>  
+  </object>  
+  <object id="22" language="java" name="StolenDetect" project="CameraApplication" 
+    file="/CameraApplication/src/StolenDetect.java" binary="false" label="stolenDetect" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="543" y="0"/>    
+    <execution id="19">      
+      <position height="21" width="96" x="480" y="260"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="103" width="96" x="480" y="287"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="SpeedingDetect" project="CameraApplication" 
+    file="/CameraApplication/src/SpeedingDetect.java" binary="false" label="speedingDetect" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="713" y="0"/>    
+    <execution id="24">      
+      <position height="21" width="113" x="580" y="308"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="21" width="113" x="580" y="348"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="CameraRecord(java.lang.String,java.lang.String,double)" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="checkStatus():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="8" operation="UnregisterDetect(CameraRecord)" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="detect():void" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="13" operation="UnpaidDetect(CameraRecord)" asynchronous="false">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="detect():void" asynchronous="false">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="18" operation="StolenDetect(CameraRecord)" asynchronous="false">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="detect():void" asynchronous="false">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="23" operation="SpeedingDetect(CameraRecord)" asynchronous="false">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="detect():void" asynchronous="false">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>
+</sequence-diagram>
