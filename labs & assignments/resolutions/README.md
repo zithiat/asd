@@ -12,3 +12,6 @@ https://drive.google.com/open?id=1EWye7wQvcfaeu7o29lyI-7IgQedcUn8u
 
 Lab 5 resolution
 https://drive.google.com/open?id=1FJBRw12OGqLgRLK94sLcIzcrGQ3B12t4
+
+Lab 6 resolution
+https://drive.google.com/open?id=1InXAbdvNW1NU95gjZy26rNcaDV5HlUny
