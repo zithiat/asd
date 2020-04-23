@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_YUnrEIS2Eeqwr7EuV38YCw" name="CarFW">
+  <elementImport xmi:id="_sDu8IIWJEeq4C_ntcfVNrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_sDu8IYWJEeq4C_ntcfVNrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+  </elementImport>
+  <elementImport xmi:id="_sDvjMIWJEeq4C_ntcfVNrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+  </elementImport>
+  <elementImport xmi:id="_sDvjMYWJEeq4C_ntcfVNrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+  </elementImport>
+  <elementImport xmi:id="_sDvjMoWJEeq4C_ntcfVNrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+  </elementImport>
+  <elementImport xmi:id="_sDvjM4WJEeq4C_ntcfVNrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_sDvjNIWJEeq4C_ntcfVNrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <elementImport xmi:id="_sDvjNYWJEeq4C_ntcfVNrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+  </elementImport>
+  <elementImport xmi:id="_sKfrcIWJEeq4C_ntcfVNrA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_75gz8IWHEeq4C_ntcfVNrA" name="HistoryList">
+    <ownedAttribute xmi:id="_Jw1eMoWKEeq4C_ntcfVNrA" name="" type="_p9rEAIWIEeq4C_ntcfVNrA" association="_Jw03IIWKEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jw1eM4WKEeq4C_ntcfVNrA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jw1eNIWKEeq4C_ntcfVNrA" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_-ujucIWHEeq4C_ntcfVNrA" name="redo"/>
+    <ownedOperation xmi:id="__mgDEIWHEeq4C_ntcfVNrA" name="undo"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_nXlLgIWIEeq4C_ntcfVNrA" name="IncreaseCommand">
+    <interfaceRealization xmi:id="_ySSlkIWIEeq4C_ntcfVNrA" client="_nXlLgIWIEeq4C_ntcfVNrA" supplier="_p9rEAIWIEeq4C_ntcfVNrA" contract="_p9rEAIWIEeq4C_ntcfVNrA"/>
+    <ownedOperation xmi:id="_0oXFEIWIEeq4C_ntcfVNrA" name="execute"/>
+    <ownedOperation xmi:id="_1it0gIWIEeq4C_ntcfVNrA" name="unexecute"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_p9rEAIWIEeq4C_ntcfVNrA" name="PressCommand">
+    <ownedOperation xmi:id="_mI2HgIWIEeq4C_ntcfVNrA" name="execute"/>
+    <ownedOperation xmi:id="_m5N0gIWIEeq4C_ntcfVNrA" name="unexecute"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_q3RlgIWIEeq4C_ntcfVNrA" name="DecreaseCommand">
+    <interfaceRealization xmi:id="_yp83oIWIEeq4C_ntcfVNrA" client="_q3RlgIWIEeq4C_ntcfVNrA" supplier="_p9rEAIWIEeq4C_ntcfVNrA" contract="_p9rEAIWIEeq4C_ntcfVNrA"/>
+    <ownedOperation xmi:id="_3L7OAIWIEeq4C_ntcfVNrA" name="execute"/>
+    <ownedOperation xmi:id="_3yPAEIWIEeq4C_ntcfVNrA" name="unexecute"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vlx8AIWIEeq4C_ntcfVNrA" name="LeftCommand">
+    <interfaceRealization xmi:id="_zM83AIWIEeq4C_ntcfVNrA" client="_vlx8AIWIEeq4C_ntcfVNrA" supplier="_p9rEAIWIEeq4C_ntcfVNrA" contract="_p9rEAIWIEeq4C_ntcfVNrA"/>
+    <ownedOperation xmi:id="_5YTmAIWIEeq4C_ntcfVNrA" name="execute"/>
+    <ownedOperation xmi:id="_6fpBgIWIEeq4C_ntcfVNrA" name="unexecute"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wlXJsIWIEeq4C_ntcfVNrA" name="RightCommand">
+    <interfaceRealization xmi:id="_y_JEgIWIEeq4C_ntcfVNrA" client="_wlXJsIWIEeq4C_ntcfVNrA" supplier="_p9rEAIWIEeq4C_ntcfVNrA" contract="_p9rEAIWIEeq4C_ntcfVNrA"/>
+    <ownedOperation xmi:id="_7egdgIWIEeq4C_ntcfVNrA" name="execute"/>
+    <ownedOperation xmi:id="_7_FbAIWIEeq4C_ntcfVNrA" name="unexecute"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_960u8IWIEeq4C_ntcfVNrA" name="CarService">
+    <ownedAttribute xmi:id="_Oh-HY4WJEeq4C_ntcfVNrA" name="" type="_GSGi8IWJEeq4C_ntcfVNrA" association="_Oh9gUIWJEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oh-ucIWJEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oh_VgIWJEeq4C_ntcfVNrA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_LgXiIoWKEeq4C_ntcfVNrA" name="" type="_75gz8IWHEeq4C_ntcfVNrA" association="_LgW7EIWKEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LgXiI4WKEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LgXiJIWKEeq4C_ntcfVNrA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_kiW_8IWKEeq4C_ntcfVNrA" name="increaseSpeed"/>
+    <ownedOperation xmi:id="_l-m7gIWKEeq4C_ntcfVNrA" name="decreaseSpeed"/>
+    <ownedOperation xmi:id="_m5M7gIWKEeq4C_ntcfVNrA" name="goLeft"/>
+    <ownedOperation xmi:id="_nf358IWKEeq4C_ntcfVNrA" name="goRight"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AIlnAIWJEeq4C_ntcfVNrA" name="CarRaceUI">
+    <ownedAttribute xmi:id="_TWLdQoWJEeq4C_ntcfVNrA" name="" type="_960u8IWIEeq4C_ntcfVNrA" association="_TWK2MIWJEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TWMEUIWJEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TWMEUYWJEeq4C_ntcfVNrA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aUF1IYWKEeq4C_ntcfVNrA" name="" type="_OmUmcIWKEeq4C_ntcfVNrA" association="_aUEnAIWKEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aUF1IoWKEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aUGcMIWKEeq4C_ntcfVNrA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_BaTGgIWJEeq4C_ntcfVNrA" name="start"/>
+    <ownedOperation xmi:id="_B1w6gIWJEeq4C_ntcfVNrA" name="stop"/>
+    <ownedOperation xmi:id="_CuTFAIWJEeq4C_ntcfVNrA" name="increaseSpeed"/>
+    <ownedOperation xmi:id="_D1evgIWJEeq4C_ntcfVNrA" name="decreaseSpeed"/>
+    <ownedOperation xmi:id="_EoN0AIWJEeq4C_ntcfVNrA" name="goLeft"/>
+    <ownedOperation xmi:id="_FGz0gIWJEeq4C_ntcfVNrA" name="goRight"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GSGi8IWJEeq4C_ntcfVNrA" name="CarDAO">
+    <ownedAttribute xmi:id="_OMcjUYWJEeq4C_ntcfVNrA" name="" type="_Hr1WAIWJEeq4C_ntcfVNrA" association="_OL9bIIWJEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OMe_kIWJEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OMe_kYWJEeq4C_ntcfVNrA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Q2RsUYWJEeq4C_ntcfVNrA" name="" type="_PT898IWJEeq4C_ntcfVNrA" association="_Q2P3IIWJEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q2STYIWJEeq4C_ntcfVNrA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q2S6cIWJEeq4C_ntcfVNrA" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_t_-w8IWKEeq4C_ntcfVNrA" name="getCar"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Hr1WAIWJEeq4C_ntcfVNrA" name="DBConnectionManager">
+    <ownedAttribute xmi:id="_ZgBJUoWJEeq4C_ntcfVNrA" name="" type="_WWsn8IWJEeq4C_ntcfVNrA" association="_Zf_7MIWJEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZgCXcIWJEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZgCXcYWJEeq4C_ntcfVNrA" value="1"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_buGxgIWJEeq4C_ntcfVNrA" name="connect"/>
+    <ownedOperation xmi:id="_d8Z1EIWJEeq4C_ntcfVNrA" name="execQuery"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OL9bIIWJEeq4C_ntcfVNrA" name="" memberEnd="_OMSLQIWJEeq4C_ntcfVNrA _OMcjUYWJEeq4C_ntcfVNrA">
+    <ownedEnd xmi:id="_OMSLQIWJEeq4C_ntcfVNrA" name="" type="_GSGi8IWJEeq4C_ntcfVNrA" association="_OL9bIIWJEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OMauIIWJEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OMcjUIWJEeq4C_ntcfVNrA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Oh9gUIWJEeq4C_ntcfVNrA" name="" memberEnd="_Oh-HYIWJEeq4C_ntcfVNrA _Oh-HY4WJEeq4C_ntcfVNrA">
+    <ownedEnd xmi:id="_Oh-HYIWJEeq4C_ntcfVNrA" name="" type="_960u8IWIEeq4C_ntcfVNrA" association="_Oh9gUIWJEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Oh-HYYWJEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Oh-HYoWJEeq4C_ntcfVNrA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PT898IWJEeq4C_ntcfVNrA" name="Car">
+    <ownedAttribute xmi:id="_4PmmoIWKEeq4C_ntcfVNrA" name="id">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7yZ_AIWKEeq4C_ntcfVNrA" name="speed">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_9TYCgIWKEeq4C_ntcfVNrA" name="point">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_jdl60oWLEeq4C_ntcfVNrA" name="" type="_IqN-8IWLEeq4C_ntcfVNrA" association="_jdkssIWLEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jdmh4IWLEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jdmh4YWLEeq4C_ntcfVNrA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Q2P3IIWJEeq4C_ntcfVNrA" name="" memberEnd="_Q2QeMIWJEeq4C_ntcfVNrA _Q2RsUYWJEeq4C_ntcfVNrA">
+    <ownedEnd xmi:id="_Q2QeMIWJEeq4C_ntcfVNrA" name="" type="_GSGi8IWJEeq4C_ntcfVNrA" association="_Q2P3IIWJEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q2RFQIWJEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q2RsUIWJEeq4C_ntcfVNrA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TWK2MIWJEeq4C_ntcfVNrA" name="" memberEnd="_TWK2MYWJEeq4C_ntcfVNrA _TWLdQoWJEeq4C_ntcfVNrA">
+    <ownedEnd xmi:id="_TWK2MYWJEeq4C_ntcfVNrA" name="" type="_AIlnAIWJEeq4C_ntcfVNrA" association="_TWK2MIWJEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TWLdQIWJEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TWLdQYWJEeq4C_ntcfVNrA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WWsn8IWJEeq4C_ntcfVNrA" name="DBConfiguration">
+    <ownedOperation xmi:id="_YOG1gIWJEeq4C_ntcfVNrA" name="loadConfig"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Zf_7MIWJEeq4C_ntcfVNrA" name="" memberEnd="_ZgAiQIWJEeq4C_ntcfVNrA _ZgBJUoWJEeq4C_ntcfVNrA">
+    <ownedEnd xmi:id="_ZgAiQIWJEeq4C_ntcfVNrA" name="" type="_Hr1WAIWJEeq4C_ntcfVNrA" association="_Zf_7MIWJEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZgBJUIWJEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZgBJUYWJEeq4C_ntcfVNrA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_E036gIWKEeq4C_ntcfVNrA" name="Observer">
+    <ownedOperation xmi:id="_G9QjUIWKEeq4C_ntcfVNrA" name="update"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Jw03IIWKEeq4C_ntcfVNrA" name="" memberEnd="_Jw03IYWKEeq4C_ntcfVNrA _Jw1eMoWKEeq4C_ntcfVNrA">
+    <ownedEnd xmi:id="_Jw03IYWKEeq4C_ntcfVNrA" name="" type="_75gz8IWHEeq4C_ntcfVNrA" association="_Jw03IIWKEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jw1eMIWKEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jw1eMYWKEeq4C_ntcfVNrA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LgW7EIWKEeq4C_ntcfVNrA" name="" memberEnd="_LgW7EYWKEeq4C_ntcfVNrA _LgXiIoWKEeq4C_ntcfVNrA">
+    <ownedEnd xmi:id="_LgW7EYWKEeq4C_ntcfVNrA" name="" type="_960u8IWIEeq4C_ntcfVNrA" association="_LgW7EIWKEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LgXiIIWKEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LgXiIYWKEeq4C_ntcfVNrA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OmUmcIWKEeq4C_ntcfVNrA" name="UIService">
+    <ownedAttribute xmi:id="_Z1E94YWKEeq4C_ntcfVNrA" name="" type="_E036gIWKEeq4C_ntcfVNrA" association="_Z1DvwIWKEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z1E94oWKEeq4C_ntcfVNrA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z1Fk8IWKEeq4C_ntcfVNrA" value="*"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_S8ptgIWKEeq4C_ntcfVNrA" name="notifyObservers"/>
+    <ownedOperation xmi:id="_o3UOAIWKEeq4C_ntcfVNrA" name="start"/>
+    <ownedOperation xmi:id="_pSd48IWKEeq4C_ntcfVNrA" name="stop"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ULYxgIWKEeq4C_ntcfVNrA" name="SpeedWindow">
+    <interfaceRealization xmi:id="_YxpyAIWKEeq4C_ntcfVNrA" client="_ULYxgIWKEeq4C_ntcfVNrA" supplier="_E036gIWKEeq4C_ntcfVNrA" contract="_E036gIWKEeq4C_ntcfVNrA"/>
+    <ownedOperation xmi:id="_qnKbAIWKEeq4C_ntcfVNrA" name="update"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Vk9MgIWKEeq4C_ntcfVNrA" name="PointWindow">
+    <interfaceRealization xmi:id="_ZDmdoIWKEeq4C_ntcfVNrA" client="_Vk9MgIWKEeq4C_ntcfVNrA" supplier="_E036gIWKEeq4C_ntcfVNrA" contract="_E036gIWKEeq4C_ntcfVNrA"/>
+    <ownedOperation xmi:id="_rex_gIWKEeq4C_ntcfVNrA" name="update"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_W1ve8IWKEeq4C_ntcfVNrA" name="ActionWindow">
+    <interfaceRealization xmi:id="_YdJhoIWKEeq4C_ntcfVNrA" client="_W1ve8IWKEeq4C_ntcfVNrA" supplier="_E036gIWKEeq4C_ntcfVNrA" contract="_E036gIWKEeq4C_ntcfVNrA"/>
+    <ownedOperation xmi:id="_sCtzAIWKEeq4C_ntcfVNrA" name="update"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Z1DvwIWKEeq4C_ntcfVNrA" name="" memberEnd="_Z1EW0IWKEeq4C_ntcfVNrA _Z1E94YWKEeq4C_ntcfVNrA">
+    <ownedEnd xmi:id="_Z1EW0IWKEeq4C_ntcfVNrA" name="" type="_OmUmcIWKEeq4C_ntcfVNrA" association="_Z1DvwIWKEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z1EW0YWKEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z1E94IWKEeq4C_ntcfVNrA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aUEnAIWKEeq4C_ntcfVNrA" name="" memberEnd="_aUFOEIWKEeq4C_ntcfVNrA _aUF1IYWKEeq4C_ntcfVNrA">
+    <ownedEnd xmi:id="_aUFOEIWKEeq4C_ntcfVNrA" name="" type="_AIlnAIWJEeq4C_ntcfVNrA" association="_aUEnAIWKEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aUFOEYWKEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aUF1IIWKEeq4C_ntcfVNrA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_IqN-8IWLEeq4C_ntcfVNrA" name="CarState">
+    <ownedOperation xmi:id="_QZ_HAIWLEeq4C_ntcfVNrA" name="updateStae"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_LANl8IWLEeq4C_ntcfVNrA" name="RookieRacer">
+    <interfaceRealization xmi:id="_PWaKIIWLEeq4C_ntcfVNrA" client="_LANl8IWLEeq4C_ntcfVNrA" supplier="_IqN-8IWLEeq4C_ntcfVNrA" contract="_IqN-8IWLEeq4C_ntcfVNrA"/>
+    <ownedOperation xmi:id="_iXhDkIWLEeq4C_ntcfVNrA" name="updateState"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MJh-cIWLEeq4C_ntcfVNrA" name="Racer">
+    <interfaceRealization xmi:id="_PHSwEIWLEeq4C_ntcfVNrA" client="_MJh-cIWLEeq4C_ntcfVNrA" supplier="_IqN-8IWLEeq4C_ntcfVNrA" contract="_IqN-8IWLEeq4C_ntcfVNrA"/>
+    <ownedOperation xmi:id="_f7GrgIWLEeq4C_ntcfVNrA" name="updateState"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_NsatgIWLEeq4C_ntcfVNrA" name="ProRacer">
+    <interfaceRealization xmi:id="_O11zsIWLEeq4C_ntcfVNrA" client="_NsatgIWLEeq4C_ntcfVNrA" supplier="_IqN-8IWLEeq4C_ntcfVNrA" contract="_IqN-8IWLEeq4C_ntcfVNrA"/>
+    <ownedOperation xmi:id="_hVb7gIWLEeq4C_ntcfVNrA" name="updateState"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jdkssIWLEeq4C_ntcfVNrA" name="" memberEnd="_jdlTwIWLEeq4C_ntcfVNrA _jdl60oWLEeq4C_ntcfVNrA">
+    <ownedEnd xmi:id="_jdlTwIWLEeq4C_ntcfVNrA" name="" type="_PT898IWJEeq4C_ntcfVNrA" association="_jdkssIWLEeq4C_ntcfVNrA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jdl60IWLEeq4C_ntcfVNrA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jdl60YWLEeq4C_ntcfVNrA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
